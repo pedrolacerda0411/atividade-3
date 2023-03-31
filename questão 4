@@ -1,0 +1,71 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+
+   int idade;
+
+ 
+
+   printf("Digite a sua idade: ");
+
+   scanf("%d", &idade);
+
+ 
+
+   if (idade < 0) {
+
+      printf("Você ainda não nasceu");
+
+   } else {
+
+      if (idade <= 15) {
+
+         printf("Você não vota");
+
+      } else {
+
+         if (idade >= 16 && idade <= 17) {
+
+            printf("O voto é opcional");
+
+         } else {
+
+            if (idade >= 18 && idade <= 65) {
+
+               if (idade == 41 || idade == 88) {
+
+                  printf("Você ganha um prêmio, mas não vota");
+
+               } else {
+
+                  printf("O voto é obrigatório");
+
+               }
+
+            } else {
+
+               if (idade > 65) {
+
+                  printf("O voto é opcional");
+
+               }
+
+            }
+
+         }
+
+      }
+
+   }
+
+ 
+ return 0;
+
+}
+
+
+
+
